@@ -21,6 +21,13 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { ShoopingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
 import { OrderComponent } from './restaurant-detail/order/order.component';
+import { InputComponent } from './shared/input/input.component';
+import { RadioComponent } from './shared/radio/radio.component';
+import { OrderItemsComponent } from './restaurant-detail/order/order-items/order-items.component';
+import { OrderService } from './restaurant-detail/order/order.service';
+
+
+
 
 
 
@@ -40,6 +47,9 @@ import { OrderComponent } from './restaurant-detail/order/order.component';
     MenuItemComponent,
     ReviewsComponent,
     OrderComponent,
+    InputComponent,
+    RadioComponent,
+    OrderItemsComponent,
     
   ],
   imports: [
@@ -49,7 +59,7 @@ import { OrderComponent } from './restaurant-detail/order/order.component';
     RouterModule.forRoot(ROUTES),
     HttpModule
   ],
-  providers: [RestaurantService, ShoopingCartService, {provide:LOCALE_ID,useValue:'pt-BR'}],
+  providers: [RestaurantService, ShoopingCartService, {provide:LOCALE_ID,useValue:'pt-BR'}, OrderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
