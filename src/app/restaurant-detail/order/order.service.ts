@@ -8,6 +8,10 @@ export class OrderService{
 
     }
 
+    itemsValue(): number{
+        return this.cartService.total()
+    }
+
     cartItems():CardItem[]{
         return this.cartService.items
     }
