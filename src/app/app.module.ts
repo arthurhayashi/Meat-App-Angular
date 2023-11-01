@@ -26,6 +26,10 @@ import { RadioComponent } from './shared/radio/radio.component';
 import { OrderItemsComponent } from './restaurant-detail/order/order-items/order-items.component';
 import { OrderService } from './restaurant-detail/order/order.service';
 import { DeliveryCostsComponent } from './restaurant-detail/order/delivery-costs/delivery-costs.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
+import { RatingComponent } from './shared/rating/rating.component';
+
+
 
 
 
@@ -53,6 +57,8 @@ import { DeliveryCostsComponent } from './restaurant-detail/order/delivery-costs
     RadioComponent,
     OrderItemsComponent,
     DeliveryCostsComponent,
+    OrderSummaryComponent,
+    RatingComponent,
     
   ],
   imports: [
