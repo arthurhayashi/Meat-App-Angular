@@ -14,8 +14,8 @@ import { MenuItem } from "app/restaurant-detail/menu-item/menu-item.model";
 export class RestaurantService{
     constructor(private http:Http){}
 
-    restuaurants(): Observable<Restaurant[]> {
-        return this.http.get(`${MEAT_API}/restaurants`).map(res => res.json()).catch(ErrorHandler.handleError);
+    restuaurants(search?: string): Observable<Restaurant[]> {
+        return this.http.get(`${MEAT_API}/restaurants`, {params: {q: search}}).map(res => res.json()).catch(ErrorHandler.handleError);
     }
 
     restaurantById(id:string):Observable<Restaurant>{
