@@ -58,7 +58,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     HttpClientModule,
     SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES, {preloadingStrategy:PreloadAllModules}),
-    HttpModule
   ],
   providers: [{provide: LocationStrategy,useClass: HashLocationStrategy},{provide:LOCALE_ID,useValue:'pt-BR'}],
   bootstrap: [AppComponent]
