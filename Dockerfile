@@ -8,5 +8,6 @@ RUN npm install --save @angular/animations@4.0.0
 RUN npm install --save web-animations-js
 RUN npm update @angular/animations @angular/platform-browser
 RUN npm install -g json-server@0.15.0
+RUN npm install json-server --save
 EXPOSE 4200
 CMD ["ng", "serve", "--host", "0.0.0.0", "--disable-host-check"]
